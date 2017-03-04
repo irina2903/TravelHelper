@@ -2,6 +2,16 @@
 Thumbs.db
 ehthumbs.db
 
+*.iml
+.gradle
+/local.properties
+/.idea
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+
+
 # Folder config file
 Desktop.ini
 
