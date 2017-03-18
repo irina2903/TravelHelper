@@ -4,5 +4,9 @@
 
     <item android:title="Свой маршрут" />
     <item android:title="Лучший машрут"/>
+    <item
+        android:id="@+id/settings_m"
+        android:title="Настройки"/>
+
 
 </menu>

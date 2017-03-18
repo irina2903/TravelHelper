@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="switch_preference_1"
+        android:summaryOff="Ночная тема выключена"
+        android:summaryOn="Ночная тема включена"
+        android:title="Ночная тема" />
+    <ListPreference
+        android:defaultValue="1"
+        android:entries="@array/languages"
+        android:entryValues="@array/languages"
+        android:key="list_preference_1"
+        android:summary="язык приложения"
+        android:title="Язык" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="check_box_preference_1"
+        android:summaryOff="Банан выключен"
+        android:summaryOn="Бананв включен"
+        android:title="@string/banan" />
+</PreferenceScreen>

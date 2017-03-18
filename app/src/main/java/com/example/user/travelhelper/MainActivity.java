@@ -1,5 +1,6 @@
 package com.example.user.travelhelper;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -8,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -25,10 +27,14 @@ public class MainActivity extends AppCompatActivity {
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                if (item.getItemId() == R.id.settings_m) {
+                    drawerLayout.closeDrawer(Gravity.START);
+                    Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
+                    startActivity(intent);
+                    return false;
+                }
+
                 return false;
-                Toast.makeText(MainActivity.this, "", Toast.LENGTH_SHORT).show();
-                drawerLayout.closeDrawer(Gravity.START);
-                break;
             }
         });
     }
