@@ -10,14 +10,17 @@ import android.os.Bundle;
 import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-
-//    Countries [] страны;
     DrawerLayout drawerLayout;
 
-   @Override
+
+
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -37,6 +40,11 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         });
+
+        ListView listView = (ListView) findViewById(R.id.ListView);
+        int itemLayout = android.R.layout.simple_list_item_1;
+        ArrayAdapter adapter = new ArrayAdapter<String>(MainActivity.this, android.R.layout.list_item);
+
     }
 
     @Override
