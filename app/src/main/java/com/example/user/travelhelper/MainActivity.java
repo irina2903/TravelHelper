@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,10 +42,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        ListView listView = (ListView) findViewById(R.id.ListView);
+        ListView listView = (ListView) findViewById(R.id.list_view);
         int itemLayout = android.R.layout.simple_list_item_1;
-        ArrayAdapter adapter = new ArrayAdapter<String>(MainActivity.this, android.R.layout.list_item);
-
+        ArrayAdapter adapter = new TravelAdapter(MainActivity.this, Database.COUNTRIES);
+        listView.setAdapter(adapter);
     }
 
     @Override
