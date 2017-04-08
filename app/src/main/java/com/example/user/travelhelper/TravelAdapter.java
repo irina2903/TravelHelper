@@ -31,8 +31,8 @@ public class TravelAdapter extends ArrayAdapter {
         titleTextView.setText(country.title);
 
         ImageView imageView = (ImageView) view.findViewById(R.id.image_view);
-        Picasso.with(getContext()).load("http://dali-tour.ru/netcat_files/userfiles/FR12.jpg").fit().centerCrop().into(imageView);
-//countries.photo вместо ссылки
+        Picasso.with(getContext()).load(country.photo).fit().centerCrop().into(imageView);
+
 
         return view;
     }
