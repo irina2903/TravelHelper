@@ -21,6 +21,7 @@
             android:name=".SettingsActivity"
         android:label="">
         </activity>
+        <activity android:name=".TheBestWayActivity" />
 
 
     </application>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "435478591038",
+    "firebase_url": "https://travelhelper-b2f2f.firebaseio.com",
+    "project_id": "travelhelper-b2f2f",
+    "storage_bucket": "travelhelper-b2f2f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:435478591038:android:5c381ddc936c2122",
+        "android_client_info": {
+          "package_name": "com.example.user.travelhelper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "435478591038-jrsjg9tn9j77352doa0ohbuftbt6tqa2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJC3Gr1uvPomeNoo9DM6_rtdcATSuDQhQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

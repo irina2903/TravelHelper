@@ -21,23 +21,21 @@ public class ConfirmationDialogFragment extends DialogFragment  {
         // создаём строителя
         AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
         // добавляем заголовок
-        builder.setTitle("Вы уверены, что хотите перейти к выбору?");
+        builder.setTitle("Сделайте ваш выбор!");
         // создаём действие при нажатии на ОК
         DialogInterface.OnClickListener okClickListener = new DialogInterface.OnClickListener() {
             @RequiresApi(api = Build.VERSION_CODES.M)
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                Intent intent = new Intent(getContext(), TheBestWay.class);
+                Intent intent = new Intent(getContext(), TheBestWayActivity.class);
                 getContext().startActivity(intent);
             }
         };
         // добавляем кнопочку OK с уже созданным действием
         builder.setPositiveButton("Лучший маршрут", okClickListener);
-        // создаём действие при нажатии на кнопку отмены
         DialogInterface.OnClickListener cancelClickListener = new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                // игнориуем
             }
         };
         builder.setPositiveButton("Свой маршрут", okClickListener);
